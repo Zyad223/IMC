@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المركز الطبي التخصصي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="alshamy.css">
+</head>
+<body style=" background-color: azure;">
+
+        <header>
+            <a href="home.html"><i class=" home fa-solid fa-house"></i> الرئيسية </a>
+            <a href="sub.html"><i class="emp fa-regular fa-address-card"></i>تسجيل دخول المريض</a>
+            <a href="work.html"><i class=" emp fa-solid fa-briefcase"></i>الوظائف</a>
+            <a href="cone.html">تواصل معنا</a>
+        </header>
+            <a href="date.html" class="date1">حجز موعد</a>
+        
+        <div class="head1" >
+            <div class="logo" >
+                <i class=" pholog fa-solid fa-stethoscope"></i>
+                <strong class="logo2"> المركز الطبي الحديث</strong>
+            </div>
+
+        </div>
+
+    
+    <section class="home2">
+        <div class="home2_he1 " style="width: 80%;margin: auto; height: 5px;">
+        </div>
+        <div class="des">
+            <div class="des1">
+            <h3 style="font-size: 25  px; color: rgb(27, 180, 27);">اعرف</h3>
+             <h1 style="font-size: 50px; color: rgba(43, 43, 252, 0.821);">IMC</h1>   
+            <p style="font-size: 16px;">يتبنى مستشفى المركز الطبي الدولي رسالة صناعة نموذج فريد لرعاية<br>
+                صحية ذات نظرة شمولية لشفاء الإنسان جسداً وعقلاً وروحاً باتباع المعايير<br>
+                الطبية العالمية واقتفاء المعايير الربانية في المعاملة والأخلاق. وتبنى<br>
+                المستشفى مبدأ (الشفاء بفن التصميم المعماري) من خلال إدخال العناصر<br>
+                التي تساعد على الشفاء مثل الإضاءة الطبيعية في جميع غرف المرضى<br>
+                والحدائق المنتشرة لتشكل بيئة صحية ملائمة، ومراعاة احترام خصوصية<br>
+                وكرامة المريض خلال رحلة الاستشفاء.
+            </p>
+            </div>
+             <img style="height: 300px;width: 500px;  border-radius: 20%;" src="photo/ph1.jpg" alt="">
+        </div>
+        <div class="home3">
+            <h1 class="logo3" >آخر الأخبار
+                
+            </h1>
+            <p class="des2">مع كافة المستجدات التي تخص الأنشطة الطبية وما يستحدث فيها، والفعاليات الاجتماعية والمشاركات المجتمعية، وكافة الأنشطة التفاعلية التي تستهدف الجمهور من زوارنا الكرام، وليكون مستشفانا دائماً على تواصل مع الجميع من متابعيه، حرصنا على إيراد آخر الأخبار والفعاليات الخاصة بالمستشفى.</p>
+        </div>
+    </section>
+     </div>
+    <script>
+        var x=document.createElement("div");
+        document.body.appendChild(x);
+        x.className="div_homeS";
+        function news(img1,txt0){
+            let myit=document.createElement("div");
+            x.appendChild(myit);
+            myit.className="div_home_scr";
+            var imag=document.createElement("img");
+            imag.src=img1;
+            myit.appendChild(imag);
+            imag.className="img_home";
+            let txt=document.createTextNode(txt0);
+            let p=document.createElement("p");
+            p.appendChild(txt);
+            p.className="txt_home_scr";
+            myit.appendChild(p);
+        }
+        let txt1= "عاجل: زيادة نسبة الإصابة بفايروس كورونا في معظم الدول العربية بشكل كبير جدا";
+        let txt2 = "ظهور فايروس جديد ناتج عن فايروس كورونا وتأكيد على ضرورة الحفاظ على إجراءات الوقاية المتبعة منذ 2019";
+        let txt3 ="إعادة فرض ارتداء الكمامات في جميع المراكز العامة ووسائل النقل حفاظا على سلامة الأفراد";
+        news("photo/ph7.jpg",txt1);
+        news("photo/ph8.jpg",txt2);
+        news("photo/ph9.jpg",txt3);
+    </script>
+    
+</body>
+</html>
